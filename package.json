@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@cosmjs/stargate": "0.26.5",
-    "@emotion/react": "11.6.0",
+    "@emotion/react": "11.9.0",
     "@emotion/styled": "11.6.0",
     "@keplr-wallet/cosmos": "0.9.6",
     "@mui/icons-material": "5.1.1",
