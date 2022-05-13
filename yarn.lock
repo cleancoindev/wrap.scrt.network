@@ -646,19 +646,53 @@
   resolved "https://registry.yarnpkg.com/@iov/utils/-/utils-2.0.2.tgz#3527f376d26100e07ac823bf87bebd0f24680d1c"
   integrity sha512-4D8MEvTcFc/DVy5q25vHxRItmgJyeX85dixMH+MxdKr+yy71h3sYk+sVBEIn70uqGP7VqAJkGOPNFs08/XYELw==
 
-"@keplr-wallet/cosmos@0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@keplr-wallet/cosmos/-/cosmos-0.9.6.tgz#062ec027b87caa6534a94f56a5823de842cbd889"
-  integrity sha512-86f56qDgTwSp6hS3lgvpem5+zI4XvCa9pIAeco68SmTqyfdhTi9NyCO24PtcfToEUsG09/prNGXPwVfe+iTimw==
+"@keplr-wallet/cosmos@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@keplr-wallet/cosmos/-/cosmos-0.10.2.tgz#63cddf00ed75e072add958889b0d1a0d088ea050"
+  integrity sha512-EhDIbYenY7JEvCT3D1FVXHwVNkdEzje9IANi2Trmc6DUJ5+9kDn/L3e2jGPe86D1vRD6CDK96ERhYaWy/2sVxQ==
   dependencies:
     "@cosmjs/launchpad" "^0.24.0-alpha.25"
-    "@keplr-wallet/types" "^0.9.6"
-    "@keplr-wallet/unit" "^0.9.6"
-    axios "^0.21.0"
+    "@keplr-wallet/crypto" "0.10.2"
+    "@keplr-wallet/proto-types" "0.10.2"
+    "@keplr-wallet/types" "0.10.2"
+    "@keplr-wallet/unit" "0.10.2"
+    axios "^0.21.4"
     bech32 "^1.1.4"
     buffer "^6.0.3"
     long "^4.0.0"
-    protobufjs "^6.10.2"
+    protobufjs "^6.11.2"
+
+"@keplr-wallet/crypto@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@keplr-wallet/crypto/-/crypto-0.10.2.tgz#9d56da1f95aa4deb86ae55b2b9eeab2b47ba40a0"
+  integrity sha512-6KzS580CExHbs4lM+VzRmE/2JSiZew7USve7SAqTdMgRwW9JcccOW8dTAqa5EFDOyukkxUCBwx4OL0MIC72vIw==
+  dependencies:
+    bip32 "^2.0.6"
+    bip39 "^3.0.3"
+    bs58check "^2.1.2"
+    buffer "^6.0.3"
+    crypto-js "^4.0.0"
+    elliptic "^6.5.3"
+    sha.js "^2.4.11"
+
+"@keplr-wallet/proto-types@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@keplr-wallet/proto-types/-/proto-types-0.10.2.tgz#962e4eaa753fc29f132fc426fa73eb5baaaa2810"
+  integrity sha512-3zCM4M9jl+y1bnq87FqH4fMR4T+tMDNJfzzFOYIQHCNblQK3ZiAtcbvXTywAsg+h/lGmF6sZVBlq8Hzb69wWUA==
+  dependencies:
+    long "^4.0.0"
+    protobufjs "^6.11.2"
+
+"@keplr-wallet/types@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@keplr-wallet/types/-/types-0.10.2.tgz#f56cf53df9099c5a6c1170f0e336a1d1fcaf4dd0"
+  integrity sha512-p0Nycru1ufAj0Uv1tKLfg2k7uH3u26h6GiEnPFkldFNl16kTdqgPzgf3WiwSOa3ILQAhxzET6cVFNKsP8iU12A==
+  dependencies:
+    "@cosmjs/launchpad" "^0.24.0-alpha.25"
+    "@cosmjs/proto-signing" "^0.24.0-alpha.25"
+    axios "^0.21.4"
+    long "^4.0.0"
+    secretjs "^0.17.0"
 
 "@keplr-wallet/types@0.8.13":
   version "0.8.13"
@@ -671,23 +705,12 @@
     long "^4.0.0"
     secretjs "^0.16.0"
 
-"@keplr-wallet/types@^0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@keplr-wallet/types/-/types-0.9.6.tgz#a317c3532dd8c0973b5b03c9078ac0741d079d27"
-  integrity sha512-3X8hqU0VMCv9BBmyTztiOUwbmglJhUqjUWfErCfudsjBCMJmhv+M3rVYuXO4c+I4xdswQvqtnOhAE64WMULXkA==
+"@keplr-wallet/unit@0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@keplr-wallet/unit/-/unit-0.10.2.tgz#f367ef9cd54202f4e94b7a770563bffdaa947ed8"
+  integrity sha512-e+aU/NuJHdwFPiiKwGYIbZkOCU3TEytqAOAx5sIrdGUgyy5CUd7LhEMbZqhQqDNhDYjfVkg+LPaUYXnFHt6ZFA==
   dependencies:
-    "@cosmjs/launchpad" "^0.24.0-alpha.25"
-    "@cosmjs/proto-signing" "^0.24.0-alpha.25"
-    axios "^0.21.0"
-    long "^4.0.0"
-    secretjs "^0.17.0"
-
-"@keplr-wallet/unit@^0.9.6":
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/@keplr-wallet/unit/-/unit-0.9.6.tgz#66063677e4afa183045faa9f86b079b0451eceaf"
-  integrity sha512-/GdPFJPIgVbbet9vKhXkna4tNQRgOw/mZlsqTI1VXMLCxi7FWCoRkq2wTYaKnj5kqJdTmQMPwdFA3pj/DGgluw==
-  dependencies:
-    "@keplr-wallet/types" "^0.9.6"
+    "@keplr-wallet/types" "0.10.2"
     big-integer "^1.6.48"
     utility-types "^3.10.0"
 
@@ -983,7 +1006,7 @@ axios@0.21.1:
   dependencies:
     follow-redirects "^1.10.0"
 
-axios@^0.21.0, axios@^0.21.1, axios@^0.21.2:
+axios@^0.21.0, axios@^0.21.1, axios@^0.21.2, axios@^0.21.4:
   version "0.21.4"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
   integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
@@ -1043,7 +1066,7 @@ bindings@^1.3.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-bip32@2.0.6:
+bip32@2.0.6, bip32@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/bip32/-/bip32-2.0.6.tgz#6a81d9f98c4cd57d05150c60d8f9e75121635134"
   integrity sha512-HpV5OMLLGTjSVblmrtYRfFFKuQB+GArM0+XP8HGWfJ5vxYBqo+DesvJwOdC2WJ3bCkZShGf0QIfoIpeomVzVdA==
@@ -1056,7 +1079,7 @@ bip32@2.0.6:
     typeforce "^1.11.5"
     wif "^2.0.6"
 
-bip39@3.0.4, bip39@^3.0.2:
+bip39@3.0.4, bip39@^3.0.2, bip39@^3.0.3:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/bip39/-/bip39-3.0.4.tgz#5b11fed966840b5e1b8539f0f54ab6392969b2a0"
   integrity sha512-YZKQlb752TrUWqHWj7XAwCSjYEgGAk+/Aas3V7NyjQeZYsztO8JnQUaCWhcnL4T+jL8nvB8typ2jRPzTlgugNw==
@@ -1104,7 +1127,7 @@ bs58@^4.0.0:
   dependencies:
     base-x "^3.0.2"
 
-bs58check@<3.0.0, bs58check@^2.1.1:
+bs58check@<3.0.0, bs58check@^2.1.1, bs58check@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/bs58check/-/bs58check-2.1.2.tgz#53b018291228d82a5aa08e7d796fdafda54aebfc"
   integrity sha512-0TS1jicxdU09dwJMNZtVAfzPi6Q6QeN0pM1Fkzrjn+XYHvzMKPU3pHVpva+769iNVSfIYWf7LJ6WR+BuuMf8cA==
@@ -1238,6 +1261,11 @@ crypt@~0.0.1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
   integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
+
+crypto-js@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
+  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
 
 csstype@^3.0.2, csstype@^3.0.9:
   version "3.0.10"
@@ -1817,7 +1845,7 @@ prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-protobufjs@6.11.2, protobufjs@^6.10.2, protobufjs@^6.11.2, protobufjs@^6.8.8, protobufjs@~6.11.2:
+protobufjs@6.11.2, protobufjs@^6.11.2, protobufjs@^6.8.8, protobufjs@~6.11.2:
   version "6.11.2"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.2.tgz#de39fabd4ed32beaa08e9bb1e30d08544c1edf8b"
   integrity sha512-4BQJoPooKJl2G9j3XftkIXjoC9C0Av2NOrWmbLWT1vH32GcSUHjM0Arra6UfTsVyfMAuFzaLucXn1sadxJydAw==
