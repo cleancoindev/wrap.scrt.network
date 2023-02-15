@@ -8,7 +8,7 @@
     "preview": "yarn build && vite preview"
   },
   "dependencies": {
-    "@cosmjs/stargate": "0.26.5",
+    "@cosmjs/stargate": "0.26.8",
     "@emotion/react": "11.6.0",
     "@emotion/styled": "11.6.0",
     "@keplr-wallet/cosmos": "0.9.6",
